@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bilu Pet Store | O lugar favorito do seu pet</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;800&family=Fredoka:wght@500;700&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Nunito', sans-serif;
+        }
+
+        body {
+            background-color: #F0F8FF; /* Fundo azul bem claro */
+            color: #333;
+        }
+
+        /* Cabeçalho */
+        header {
+            background-color: #1E3A8A; /* Azul escuro do logo */
+            padding: 15px 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-bottom: 4px solid #F97316; /* Laranja do logo */
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .logo-text {
+            font-family: 'Fredoka', sans-serif;
+            font-size: 24px;
+            font-weight: 700;
+            color: #fff;
+            text-transform: uppercase;
+        }
+        
+        .logo-text span {
+            color: #F97316; /* Laranja */
+        }
+
+        /* Hero Section */
+        .hero {
+            text-align: center;
+            padding: 60px 20px;
+            background: linear-gradient(rgba(30, 58, 138, 0.8), rgba(30, 58, 138, 0.9)), url('https://images.unsplash.com/photo-1548199973-03cce0bbc87b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80');
+            background-size: cover;
+            background-position: center;
+            color: #fff;
+        }
+
+        .hero h1 {
+            font-family: 'Fredoka', sans-serif;
+            font-size: 32px;
+            font-weight: 700;
+            margin-bottom: 15px;
+            line-height: 1.2;
+            color: #F97316; /* Destaque laranja */
+            text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+        }
+
+        .hero p {
+            font-size: 16px;
+            margin-bottom: 30px;
+            color: #fff;
+        }
+
+        .btn-whatsapp {
+            display: inline-block;
+            background-color: #25D366;
+            color: white;
+            padding: 16px 40px;
+            text-decoration: none;
+            font-weight: 800;
+            border-radius: 50px;
+            font-size: 16px;
+            text-transform: uppercase;
+            box-shadow: 0 4px 15px rgba(37, 211, 102, 0.4);
+            transition: transform 0.3s;
+        }
+
+        .btn-whatsapp:hover {
+            transform: scale(1.05);
+        }
+
+        /* Barra de Horários */
+        .info-bar {
+            background-color: #F97316; /* Laranja */
+            color: #fff;
+            text-align: center;
+            padding: 15px;
+            font-weight: 800;
+            font-size: 15px;
+        }
+
+        /* Seção de Serviços */
+        .section-title {
+            text-align: center;
+            font-family: 'Fredoka', sans-serif;
+            font-size: 26px;
+            color: #1E3A8A;
+            margin: 40px 0 20px 0;
+            font-weight: 700;
+        }
+
+        .servicos-container {
+            padding: 0 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .servico-card {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+            border-left: 5px solid #1E3A8A;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .servico-icon {
+            font-size: 30px;
+        }
+
+        .servico-text h3 {
+            color: #1E3A8A;
+            font-size: 18px;
+            margin-bottom: 5px;
+        }
+
+        .servico-text p {
+            color: #666;
+            font-size: 14px;
+        }
+
+        /* Rodapé */
+        footer {
+            text-align: center;
+            padding: 40px 20px;
+            background-color: #1E3A8A;
+            color: #fff;
+            font-size: 14px;
+            margin-top: 50px;
+        }
+
+        footer p {
+            margin-bottom: 5px;
+        }
+
+        footer a {
+            color: #F97316;
+            text-decoration: none;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo-text">Bilu <span>Pet Store</span></div>
+    </header>
+
+    <section class="hero">
+        <h1>O lugar favorito do seu pet!</h1>
+        <p>Aqui cuidamos do seu pet como família. Banho com carinho de verdade e tosa especializada.</p>
+        <!-- Link do WhatsApp deles (com número da bio) -->
+        <a href="https://wa.me/5545999616301" class="btn-whatsapp" target="_blank">Agendar Horário</a>
+    </section>
+
+    <div class="info-bar">
+        🕒 Seg a Sex: 8h às 18h | Sábado: 8h às 13h
+    </div>
+
+    <h2 class="section-title">Nossos Serviços</h2>
+    
+    <section class="servicos-container">
+        <div class="servico-card">
+            <div class="servico-icon">🛁</div>
+            <div class="servico-text">
+                <h3>Banho & Tosa</h3>
+                <p>Produtos de qualidade, água na temperatura ideal e muito carinho para deixar seu pet cheiroso.</p>
+            </div>
+        </div>
+
+        <div class="servico-card">
+            <div class="servico-icon">✂️</div>
+            <div class="servico-text">
+                <h3>Tosa Higiênica e da Raça</h3>
+                <p>Profissionais especializados para deixar o visual do seu amigo impecável e confortável.</p>
+            </div>
+        </div>
+
+        <div class="servico-card">
+            <div class="servico-icon">🐶</div>
+            <div class="servico-text">
+                <h3>Carding (Escovação)</h3>
+                <p>Remoção de pelos mortos e desembaraço, ideal para manter a pelagem saudável.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Bilu Pet Store. Todos os direitos reservados.</p>
+        <p>📍 Rua Tenente Eduardo Olmedo, 792 - Morumbi, Foz do Iguaçu</p>
+        <p>Atendimento: <a href="https://wa.me/5545999616301">(45) 99961-6301</a></p>
+    </footer>
+
+</body>
+</html>
